@@ -32,6 +32,7 @@ const mentors = [
     intro:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur luctus tempor augue, vitae porttitor quam lobortis eget. Morbi egestas lacinia finibus.",
     areas: "Marketing, PR",
+    bookingUrl: "https://calendly.com/thuyet/mentoring",
   },
   {
     id: "2",
@@ -41,33 +42,17 @@ const mentors = [
     intro:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur luctus tempor augue, vitae porttitor quam lobortis eget. Morbi egestas lacinia finibus.",
     areas: "Business Intelligence",
+    bookingUrl: "https://calendly.com/thuyet/mentoring",
   },
   {
-    id: "2",
-    name: "Hoang Gia",
+    id: "3",
+    name: "Thuyet Nguyen",
     img: "royal.jpg",
     currentTitle: "Senior Associate Consultant",
     intro:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur luctus tempor augue, vitae porttitor quam lobortis eget. Morbi egestas lacinia finibus.",
     areas: "Business Intelligence",
-  },
-  {
-    id: "2",
-    name: "Hoang Gia",
-    img: "royal.jpg",
-    currentTitle: "Senior Associate Consultant",
-    intro:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur luctus tempor augue, vitae porttitor quam lobortis eget. Morbi egestas lacinia finibus.",
-    areas: "Business Intelligence",
-  },
-  {
-    id: "2",
-    name: "Hoang Gia",
-    img: "royal.jpg",
-    currentTitle: "Senior Associate Consultant",
-    intro:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur luctus tempor augue, vitae porttitor quam lobortis eget. Morbi egestas lacinia finibus.",
-    areas: "Business Intelligence",
+    bookingUrl: "https://calendly.com/thuyet/mentoring",
   },
 ]
 export default function Home() {
@@ -174,7 +159,13 @@ export default function Home() {
               <Divider />
               <CardFooter>
                 <ButtonGroup spacing="2">
-                  <Button variant="solid" colorScheme="yellow">
+                  <Button
+                    as={Link}
+                    variant="solid"
+                    colorScheme="yellow"
+                    href="https://calendly.com/thuyet/mentoring"
+                    isExternal
+                  >
                     Schedule a chat
                   </Button>
                   <Button variant="ghost">Learn more</Button>
