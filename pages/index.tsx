@@ -28,7 +28,7 @@ const mentors = [
     id: "1",
     name: "Hong Anh",
     img: "niji.jpg",
-    currentTitle: "Corporate Communications Manager",
+    currentTitle: "Corporate Communications Manager @ Greenfeed",
     intro:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur luctus tempor augue, vitae porttitor quam lobortis eget. Morbi egestas lacinia finibus.",
     areas: "Marketing, PR",
@@ -38,7 +38,7 @@ const mentors = [
     id: "2",
     name: "Hoang Gia",
     img: "royal.jpg",
-    currentTitle: "Senior Associate Consultant",
+    currentTitle: "Senior Associate Consultant @ Bosch",
     intro:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur luctus tempor augue, vitae porttitor quam lobortis eget. Morbi egestas lacinia finibus.",
     areas: "Business Intelligence",
@@ -48,7 +48,7 @@ const mentors = [
     id: "3",
     name: "Thuyet Nguyen",
     img: "thuyet.jpg",
-    currentTitle: "IELTS instructor | Frontend Developer",
+    currentTitle: "IELTS instructor @ YOLA | Frontend Developer",
     intro:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur luctus tempor augue, vitae porttitor quam lobortis eget. Morbi egestas lacinia finibus.",
     areas: "Teaching, Career change",
