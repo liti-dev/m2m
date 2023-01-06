@@ -51,7 +51,7 @@ const mentors = [
     currentTitle: "IELTS instructor | Frontend Developer",
     intro:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur luctus tempor augue, vitae porttitor quam lobortis eget. Morbi egestas lacinia finibus.",
-    areas: "Software development, Career change, Teaching",
+    areas: "Teaching, Career change",
     bookingUrl: "https://calendly.com/thuyet/mentoring",
   },
 ]
@@ -144,7 +144,7 @@ export default function Home() {
                   <Heading size="md">{m.name}</Heading>
                   <Heading size="md">{m.currentTitle}</Heading>
                   <Text>
-                    <Badge size="md" bg={yellow}>
+                    <Badge size="md" bg={yellow} whiteSpace="break-spaces">
                       {m.areas}
                     </Badge>
                   </Text>
@@ -159,7 +159,7 @@ export default function Home() {
               </CardBody>
               <Divider />
               <CardFooter>
-                <ButtonGroup spacing="2">
+                <ButtonGroup spacing="2" w="100%">
                   <Button
                     as={Link}
                     variant="solid"
@@ -167,6 +167,8 @@ export default function Home() {
                     href={m.bookingUrl}
                     _hover={{ textDecoration: "none", bgColor: "yellow.300" }}
                     isExternal
+                    whiteSpace="break-spaces"
+                    textAlign="center"
                   >
                     Schedule a chat
                   </Button>
