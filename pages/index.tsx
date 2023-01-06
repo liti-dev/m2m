@@ -47,11 +47,11 @@ const mentors = [
   {
     id: "3",
     name: "Thuyet Nguyen",
-    img: "royal.jpg",
-    currentTitle: "Senior Associate Consultant",
+    img: "thuyet.jpg",
+    currentTitle: "IELTS instructor | Frontend Developer",
     intro:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur luctus tempor augue, vitae porttitor quam lobortis eget. Morbi egestas lacinia finibus.",
-    areas: "Business Intelligence",
+    areas: "Software development, Career change, Teaching",
     bookingUrl: "https://calendly.com/thuyet/mentoring",
   },
 ]
@@ -62,6 +62,7 @@ export default function Home() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,
   }
 
   return (
@@ -163,7 +164,8 @@ export default function Home() {
                     as={Link}
                     variant="solid"
                     colorScheme="yellow"
-                    href="https://calendly.com/thuyet/mentoring"
+                    href={m.bookingUrl}
+                    _hover={{ textDecoration: "none", bgColor: "yellow.300" }}
                     isExternal
                   >
                     Schedule a chat
